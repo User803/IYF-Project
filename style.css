@@ -1,54 +1,75 @@
 body {
-    background-color:rgb(196, 213, 208);
+    background-color: rgb(196, 213, 208);
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-.page {
-  display: flex;          /* puts both divs side by side */
-  align-items: center;   /* vertically centers image with text */
-  gap: 50px;             /* space between text + image */
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;
+    padding: 0 30px;   /* space from edges */
+    height: 40px;      /* fixed height */
+    box-sizing: border-box;
 }
 
+/* Logo + text inline */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Navigation links & button */
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav button {
+    margin-left: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Full-page sections */
+.home,
+.about,
+.services,
+.contact {
+    display: flex;
+    justify-content: space-between; /* text left, image right */
+    align-items: center;            /* vertical centering */
+    height: 100vh;                  /* full viewport */
+    padding: 0 50px;                /* horizontal spacing from edges */
+    box-sizing: border-box;
+    gap: 50px;                      /* space between text and image */
+}
+
+.contact > div {
+  flex: 1;                           /* both inner divs take equal width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;      /* aligns content to top */
+  gap: 10px;                        /* spacing inside each div */
+}
+
+/* Page content layout for text + image inside sections */
 .text-section {
-  flex: 1;
+    flex: 1;
 }
 
 .image-section {
-  flex: 1;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between; /* pushes logo left, nav right */
-  align-items: center;
-}
-
-.nav a {
-  margin-left: 20px;
-}
-
-.home,
-.about,
-.services {
-  display: flex;
-  justify-content: space-between; /* left = text, right = image */
-  align-items: center;            /* vertical centering */
-  height: 100vh;
-  padding: 0 50px;                /* horizontal padding */
-  box-sizing: border-box;
-}
-
-.contact {
-  display: flex;
-  justify-content: space-between; /* left = text, right = image */
-  align-items: center;            /* vertical centering */
-  height: 100vh;
-  padding: 0 30px;                /* horizontal padding */
-  box-sizing: border-box;
+    flex: 1;
 }
 
 
-
+/* .page {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+} */
