@@ -1,9 +1,9 @@
 body {
-    background-color: aliceblue;
+    background-color:rgb(196, 213, 208);
 }
 
-.home {
-  display: flex;
+html {
+  scroll-behavior: smooth;
 }
 
 .page {
@@ -19,3 +19,36 @@ body {
 .image-section {
   flex: 1;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between; /* pushes logo left, nav right */
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 20px;
+}
+
+.home,
+.about,
+.services {
+  display: flex;
+  justify-content: space-between; /* left = text, right = image */
+  align-items: center;            /* vertical centering */
+  height: 100vh;
+  padding: 0 50px;                /* horizontal padding */
+  box-sizing: border-box;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between; /* left = text, right = image */
+  align-items: center;            /* vertical centering */
+  height: 100vh;
+  padding: 0 30px;                /* horizontal padding */
+  box-sizing: border-box;
+}
+
+
+

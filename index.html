@@ -10,49 +10,63 @@
     <body>
 
         <!-- Header Part -->
-        <header>
-            <img src="/IYF-Project/assets/J logo.jpg" height="50" width="50"/>
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Services">Services</a>
-            <!-- <a href="#Portfolio">Portfolio</a>   -->
-            <button>Contact</button>  
+        <header class="header">
+            <div>
+                <img src="/IYF-Project/assets/J logo.jpg" height="50" width="50"/>
+            </div>
+            
+            <nav class="nav">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Services">Services</a>
+                <!-- <a href="#Portfolio">Portfolio</a>   -->
+                <a href="#Contact">
+                    <button>Contact</button>
+                </a>  
+            </nav>
         </header>
 
         <!-- Home Div-->
-        <div class="home">
+        <!-- The id=" " has been referenced in the header section 
+             and will scroll to each section when clicked, as they
+             are links
+        -->
+        <!-- The class=" " is used for the CSS styling-->
+        <div class="home" id="Home">
             <div class="text-section">
-                <h2>Hello, I'm Jackson, a freelance developer based in Kenya. </br> 
+                <h1>Hello, I'm Jack <br>
+                    A freelance developer based in Kenya. 
                     I help bring ideas to life by building websites 
-                    that feel smooth, </br> friendly, and easy to navigate.
+                    that feel smooth, friendly, and easy to navigate.
                     I offer services for customers specializing in creating stylish, 
                     modern </br> and user-friendly websites
-                </h2>
+                </h1>
                 <button>Say Hello</button>
             </div>
+
             <div class="image-section">
-                <img src="/IYF-Project/assets/Dev.jpg" height="200" width="300">
+                <img src="/IYF-Project/assets/Dev.jpg" height="400" width="400">
             </div>
         </div> 
         
         <!-- About Div-->
-        <div>
-            <div>
-                <img src="/IYF-Project/assets/Dev.jpg" height="300" width="300">
+        <div class="about" id="About">
+            <div class="text-section">
+                <img src="/IYF-Project/assets/Dev.jpg" height="400" width="400">
             </div>
 
-            <div>
-                <h2>Hello, I'm Jackson
-                    I'm a Freelance Developer based in Kenya. </br>
-                    I strive to build immersive and beautiful web applications </br>
+            <div class="image-section">
+                <h1>Hello, I'm Jackson
+                    I'm a Freelance Developer based in Kenya.
+                    I strive to build immersive and beautiful web applications 
                     through carefully crafted code and user-centric design.
-                </h2>
+                </h1>
                 <button>My Projects</button>
             </div>            
         </div> 
         
         <!-- Services Div-->
-        <div>
+        <div class="services" id="Services">
             <div>
 
             </div>    
@@ -73,7 +87,7 @@
         </div>         -->
         
         <!-- Contact Div-->
-        <div>
+        <div class="contact" id="Contact">
             <div>
                 <p>Email: Jack@example.com</p>
                 <p>Phone: +254 01234567</p>
