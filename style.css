@@ -1,0 +1,21 @@
+body {
+    background-color: aliceblue;
+}
+
+.home {
+  display: flex;
+}
+
+.page {
+  display: flex;          /* puts both divs side by side */
+  align-items: center;   /* vertically centers image with text */
+  gap: 50px;             /* space between text + image */
+}
+
+.text-section {
+  flex: 1;
+}
+
+.image-section {
+  flex: 1;
+}

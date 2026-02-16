@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -19,18 +20,18 @@
         </header>
 
         <!-- Home Div-->
-        <div>
-            <div>
-                <h2>Hello, I'm Jackson, a freelance developer based in Kenya. </br>
+        <div class="home">
+            <div class="text-section">
+                <h2>Hello, I'm Jackson, a freelance developer based in Kenya. </br> 
                     I help bring ideas to life by building websites 
-                    that feel </br> smooth, friendly, and easy to navigate. </br>
-                    I offer services for customers specializing in creating </br> stylish, 
-                    modern and user-friendly websites
+                    that feel smooth, </br> friendly, and easy to navigate.
+                    I offer services for customers specializing in creating stylish, 
+                    modern </br> and user-friendly websites
                 </h2>
                 <button>Say Hello</button>
             </div>
-            <div>
-                <img src="/IYF-Project/assets/Dev.jpg" height="300" width="300">
+            <div class="image-section">
+                <img src="/IYF-Project/assets/Dev.jpg" height="200" width="300">
             </div>
         </div> 
         
@@ -100,19 +101,19 @@
                 <form action="#" method="post">
 
                     <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
+                    <input type="text" name="name" required><br><br>
 
                     <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="email" name="email" required><br><br>
 
                     <label for="location">Location:</label><br>
-                    <input type="text" id="location" name="location"><br><br>
+                    <input type="text" name="location"><br><br>
 
                     <label for="budget">Budget:</label><br>
-                    <input type="number" id="budget" name="budget"><br><br>
+                    <input type="number" name="budget"><br><br>
 
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+                    <textarea name="message" rows="5" cols="40"></textarea><br><br>
 
                     <button type="submit">Submit</button>
 
