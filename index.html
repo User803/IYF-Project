@@ -9,12 +9,14 @@
 
     <body>
 
-        <!-- Header Part -->
-        <header class="header">
+        <!-- Header part doesn't require a class="" as this is a HTML5 semantic element
+             and can be accessed directly in the CSS file unless multiple headers exist 
+        -->
+        <header>
             <div class="logo-container">
                 <img src="/IYF-Project/assets/J logo.jpg" alt="Logo" width="50">
                 <!-- <span>Myself</span> -->
-                 <h2>Myself</h2>
+                 <h2>JACKSON</h2>
             </div>
             
             <nav class="nav">
@@ -37,13 +39,14 @@
         <div class="home" id="Home">
             <div class="text-section">
                 <h1>Hello, I'm Jack <br>
-                    A freelance developer based in Kenya. 
-                    I help bring ideas to life by building websites 
-                    that feel smooth, friendly, and easy to navigate.
-                    I offer services for customers specializing in creating stylish, 
-                    modern and user-friendly websites
+                    and I love turning ideas and concepts into real, working projects.
                 </h1>
-                <button>Say Hello</button>
+
+                <nav class="nav">
+                    <a href="#Contact">
+                        <button>Say Hello</button>
+                    </a>
+                </nav>                
             </div>
 
             <div class="image-section">
@@ -54,18 +57,33 @@
         <!-- About Div-->
         <div class="about" id="About">
             <div class="text-section">
-                <img src="/IYF-Project/assets/Dev.jpg" height="400" width="400">
+                <img src="/IYF-Project/assets/About.jpg" height="440" width="560">
             </div>
 
             <div class="text-section">
-                <h1>Hello, I'm Jack <br>
+                <!-- <h1>Hello, I'm Jack <br>
                     A freelance developer based in Kenya. 
                     I help bring ideas to life by building websites 
                     that feel smooth, friendly, and easy to navigate.
                     I offer services for customers specializing in creating stylish, 
                     modern and user-friendly websites
-                </h1>
-                <button>Say Hello</button>
+                </h1> -->
+                <h1>About me</h1>
+                <h2>
+                   Hi, I’m Jackson, a frontend developer who enjoys building things that 
+                   make everyday life smoother and smarter. I’m driven by curiosity and a constant 
+                   desire to improve.I don’t just like writing code, I like creating solutions that actually work, scale, and make an 
+                   impact. I’m always ready for the next challenge and excited to collaborate on 
+                   projects that push boundaries. 
+                   If there’s something ambitious to build, I’m in. Let’s create something bold and 
+                   meaningful together.
+                </h2>
+
+                <nav class="nav">
+                    <a href="#Contact">
+                        <button>Chat me up</button>
+                    </a>
+                </nav>   
             </div>           
         </div> 
         
@@ -93,24 +111,33 @@
         <!-- Contact Div-->
         <div class="contact" id="Contact">
             <div>
-                <p>Email: Jack@example.com</p>
-                <p>Phone: +254 01234567</p>
+                <h1>
+                    Do you have a custom idea? Contact me lets dicuss your project!
+                </h1>          
+                           
+                <a>Email: Jack@example.com</a>
+                <a>Phone: +254 01234567</a>
+                <br>
 
                 <div>
-                    <a href="https://facebook.com/yourprofile" target="_blank">
-                    <img src="assets/facebook.jpg" height="42" width="42">
+                    <a href="https://facebook.com/" target="_blank">
+                    <img src="assets/facebook.png">
                     </a>
 
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank">
-                    <img src="assets/linkedin.jpg" height="42" width="42">
+                    <a href="https://linkedin.com/in/" target="_blank">
+                    <img src="assets/linkedin.png">
                     </a>
 
-                    <a href="https://x.com/yourprofile" target="_blank">
-                    <img src="assets/X.jpg" height="32" width="32">
+                    <a href="https://x.com/" target="_blank">
+                    <img src="assets/x.png">
                     </a>
 
-                    <a href="https://instagram.com/yourprofile" target="_blank">
-                    <img src="assets/instagram.jpg" height="32" width="32">
+                    <a href="https://instagram.com/" target="_blank">
+                    <img src="assets/instagram.png">
+                    </a>
+
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                    <img src="assets/whatsapp.png">
                     </a>
                 </div>
             </div>
@@ -124,19 +151,21 @@
                     <label for="email">Email:</label><br>
                     <input type="email" name="email" required><br><br>
 
-                    <label for="location">Location:</label><br>
-                    <input type="text" name="location"><br><br>
-
                     <label for="budget">Budget:</label><br>
                     <input type="number" name="budget"><br><br>
 
-                    <label for="message">Message:</label><br>
+                    <label for="message">Project Idea:</label><br>
                     <textarea name="message" rows="5" cols="40"></textarea><br><br>
 
                     <button type="submit">Submit</button>
 
                 </form>
             </div>
-        </div>       
+        </div>   
+        
+        <footer>
+            <p>&copy; 2026 Jackson. All rights reserved.</p>
+        </footer>
+
     </body>
 </html>
