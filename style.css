@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(196, 213, 208);
+    background-color: rgb(169, 183, 180);
 }
 
 html {
@@ -30,15 +30,22 @@ header {
     color: #333;
 }
 
-.nav button {
+/* 
+background-color:  color of the button
+color:             color of the text in the button
+*/
+button {
+    background-color: rgb(227, 218, 218);
+    color: rgb(9, 9, 9);
     margin-left: 20px;
     padding: 8px 16px;
     cursor: pointer;
 }
 
-button:hover{
-    background-color: rgb(139, 134, 108);
-    transform: translateY(-3px);    
+button:hover {
+    background-color: rgb(45, 43, 36);
+    transform: translateY(-3px);  
+    color: azure;  
 }
 
 /* Full-page sections */
@@ -50,7 +57,7 @@ button:hover{
     justify-content: space-between; /* text left, image right */
     align-items: center;            /* vertical centering */
     height: 100vh;                  /* full viewport */
-    padding: 0 50px;                /* horizontal spacing from edges */
+    padding: 0 50px;                /* horizontal spacing from edges */            
     box-sizing: border-box;
     gap: 50px;                      /* space between text and image */
 }
