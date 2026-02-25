@@ -26,8 +26,11 @@ header {
 /* Navigation links & button */
 .nav a {
     margin-left: 20px;
-    text-decoration: none;
-    color: #333;
+    text-decoration: solid;
+    color: #131313;
+    font-weight: 600;          /* semi-bold */
+    font-size: 1rem;           /* size of the letters */
+    text-transform: uppercase; /* All letters uppercase */
 }
 
 /* 
@@ -51,15 +54,15 @@ button:hover {
 /* Full-page sections */
 .home,
 .about,
-.services,
+.process,
 .contact {
     display: flex;
     justify-content: space-between; /* text left, image right */
     align-items: center;            /* vertical centering */
-    height: 100vh;                  /* full viewport */
+    height: 100vh;                  /* full view of each section takes entire page */
     padding: 0 50px;                /* horizontal spacing from edges */            
     box-sizing: border-box;
-    gap: 50px;                      /* space between text and image */
+    gap: 50px;                      /* space between text div and image div */
 }
 
 .contact > div {
@@ -70,13 +73,61 @@ button:hover {
   gap: 10px;                        /* spacing inside each div */
 }
 
-/* Page content layout for text + image inside sections */
-.text-section {
-    flex: 1;
+/* Page content layout for text + cards inside process section */
+.text-section,
+.cards-section {
+    flex: 1;                        /* each takes half of process section */
+    min-width: 0;                   /* prevents overflow */
 }
 
 .image-section {
     flex: 1;
+}
+
+/* Cards grid (2 by 2) */
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+/* Card container styling */
+.card { 
+    background-color: #4e4646;               /* background coloring of cards */
+    border-radius: 12px;                       /* rounded corners */
+    padding: 0.8rem;                           /* spacing inside card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;                         /* center text */
+    width: 100%;                                /* fit to grid cell */
+    aspect-ratio: 1 / 1;                        /* keep square shape */
+    box-sizing: border-box;                     /* include padding in size */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Card title and text styling */
+.card h2 {
+    font-size: 1.0rem;
+    color: #fbfbfb;
+    margin: 0.5;     /* custom margins */
+    padding: 0.5;    /* custom padding */
+}
+
+.card h3 {
+    font-size: 0.9rem;
+    color: #fbfbfb;
+    line-height: 1.4;
+    margin: 0;       /* remove default margins */
+    padding: 0;      /* remove default padding */
 }
 
 .contact img {
@@ -97,6 +148,6 @@ button:hover {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center; /* centers everything horizontally */
+    align-items: center;     /* centers everything horizontally */
     justify-content: center; /* optional vertical centering */
 }
