@@ -72,7 +72,7 @@
 
                 <nav class="nav">
                     <a href="#Contact">
-                        <button>Chat me up</button>
+                        <button>Get in Touch</button>
                     </a>
                 </nav>   
             </div>           
@@ -86,14 +86,14 @@
                     full-fledged application. From understanding your vision and defining clear 
                     objectives, to designing, developing, testing and finally deploying the 
                     solution. Each step is carefully planned to ensure quality, efficiency 
-                    and a product that truly meets your needs.
+                    and a product that meets your needs and taste.
                 </h2>
             </div>
 
             <div class="cards-section">
                 <div class="card">
                     <h2>1. Research</h2>
-                    <h3>Understanding your idea, <br> goals, users, and <br> competitors.</h3>
+                    <h3>Understanding your idea, <br> goals, users and <br> competitors.</h3>
                 </div>
 
                 <div class="card">
@@ -164,7 +164,7 @@
 
             <div>
                 <!-- Page reloads onSubmit -->
-                <form action="" method="get">
+                <form action="" method="get" onsubmit="alert('Your message has been sent!');">
 
                     <label for="name">Name:</label><br>
                     <input type="text" name="name" required><br><br>
@@ -173,7 +173,8 @@
                     <input type="email" name="email" required><br><br>
 
                     <label for="budget">Budget:</label><br>
-                    <input type="number" name="budget"><br><br>
+                    <!-- Budget can't be negative and can't contain decimals -->
+                    <input type="number" name="budget" min="0" step="1" required><br><br>
 
                     <label for="message">Project Idea:</label><br>
                     <textarea name="message" rows="5" cols="40"></textarea><br><br>

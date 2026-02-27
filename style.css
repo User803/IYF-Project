@@ -1,5 +1,7 @@
 body {
     background-color: rgb(169, 183, 180);
+    /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F36%2F1%2FDL26Rv.jpg&f=1&nofb=1&ipt=b2007a45d641d9bbeb4934e9e0c9041c7f49187864a352ebd95946507223cdb1); */
+
 }
 
 html {
@@ -11,8 +13,8 @@ header {
     display: flex;
     justify-content: space-between; /* logo left, nav right */
     align-items: center;
-    padding: 0 30px;   /* space from edges */
-    height: 40px;      /* fixed height */
+    padding: 0 30px;                /* space from edges */
+    height: 40px;                   /* fixed height */
     box-sizing: border-box;
 }
 
@@ -30,7 +32,7 @@ header {
     color: #131313;
     font-weight: 600;          /* semi-bold */
     font-size: 1rem;           /* size of the letters */
-    text-transform: uppercase; /* All letters uppercase */
+    text-transform: uppercase; /* all letters uppercase */
 }
 
 /* 
