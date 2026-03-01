@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(169, 183, 180);
+    background-color: rgb(222, 240, 236);
     /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F36%2F1%2FDL26Rv.jpg&f=1&nofb=1&ipt=b2007a45d641d9bbeb4934e9e0c9041c7f49187864a352ebd95946507223cdb1); */
 
 }
@@ -152,4 +152,7 @@ footer {
     flex-direction: column;
     align-items: center;     /* centers everything horizontally */
     justify-content: center; /* optional vertical centering */
+    background-color: #060606;
+    color: #fbfbfb;
 }
+                                                
