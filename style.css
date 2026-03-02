@@ -133,6 +133,85 @@ button:hover {
     padding: 0;      /* remove default padding */
 }
 
+/* Projects Section */
+.portfolio {
+  text-align: center;
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;      /* To manually increase spacing from the process section */
+  gap: 30px;
+}
+
+/* Individual Card */
+.portfolio-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;        /* clips image to rounded corners */
+  min-height: 480px;
+  max-height: 480px;
+}
+
+/* Project Image */
+.portfolio-image {  
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;      /* Is the same as the next line */
+  /* flex: 1; */
+  height: 260px;
+  object-fit: cover;       /* prevents stretching */ 
+  overflow: hidden;        /* images have same height, the rest is hidden */
+}
+
+.portfolio-image img {  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card Hover Effect */
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Info Area */
+.project-info {
+  flex: 0 0 50%;
+  /* flex: 1;  */
+  padding: 25px;
+}
+
+.project-info h3 {
+  font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.project-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Link Button */
+.project-info a {
+  display: inline-block;
+  text-decoration: none;
+  background: #007bff;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.project-info a:hover {
+  background: #0056b3;
+} 
+
 .contact img {
     width: 40px;
     height: 40px;
