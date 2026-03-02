@@ -1,7 +1,5 @@
 body {
     background-color: rgb(222, 240, 236);
-    /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F36%2F1%2FDL26Rv.jpg&f=1&nofb=1&ipt=b2007a45d641d9bbeb4934e9e0c9041c7f49187864a352ebd95946507223cdb1); */
-
 }
 
 html {
@@ -37,7 +35,7 @@ header {
 
 /* 
 background-color:  color of the button
-color:             color of the text in the button
+color           :  color of the text in the button
 */
 button {
     background-color: rgb(227, 218, 218);
@@ -136,33 +134,31 @@ button:hover {
 /* Projects Section */
 .portfolio {
   text-align: center;
-  display: flex;
   gap: 30px;
-  margin-top: 40px;      /* To manually increase spacing from the process section */
+  margin-top: 40px;     /* To manually increase spacing from the process section */
   gap: 30px;
 }
 
 /* Individual Card */
 .portfolio-card {
-  background: #fff;
+  background: #e6e3e3;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  overflow: hidden;        /* clips image to rounded corners */
-  min-height: 480px;
-  max-height: 480px;
+  overflow: hidden;        
+  height: 480px;
 }
 
 /* Project Image */
 .portfolio-image {  
   display: flex;
   flex-direction: column;
-  flex: 0 0 50%;      /* Is the same as the next line */
-  /* flex: 1; */
+  flex: 0 0 50%;          /* grow: 0 -> NOT grow if there’s extra space, shrink: 0 → NOT shrink if space is tight, basis: 50% → base size is 50% of the container. */
+  /*flex: 1; */           /* flex-grow: 1 -> It CAN grow, flex-shrink: 1 -> It CAN shrink. flex-basis: 0% -> Start at 0 width, then distribute space. */
   height: 260px;
-  object-fit: cover;       /* prevents stretching */ 
-  overflow: hidden;        /* images have same height, the rest is hidden */
+  object-fit: cover;      /* prevents stretching */ 
+  overflow: hidden;       /* images have same height, the rest is hidden */
 }
 
 .portfolio-image img {  
@@ -180,8 +176,8 @@ button:hover {
 
 /* Info Area */
 .project-info {
-  flex: 0 0 50%;
-  /* flex: 1;  */
+  flex: 0 0 50%;          /* grow: 0 -> NOT grow if there’s extra space, shrink: 0 → NOT shrink if space is tight, basis: 50% → base size is 50% of the container. */
+  /*flex: 1; */           /* flex-grow: 1 -> It CAN grow, flex-shrink: 1 -> It CAN shrink. flex-basis: 0% -> Start at 0 width, then distribute space. */
   padding: 25px;
 }
 
