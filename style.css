@@ -57,7 +57,8 @@ button:hover {
 .home,
 .about,
 .process,
-.contact {
+.contact,
+.portfolio {
     display: flex;
     justify-content: space-between; /* text left, image right */
     align-items: center;            /* vertical centering */
