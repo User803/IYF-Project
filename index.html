@@ -193,18 +193,18 @@
                 <!-- Page reloads onSubmit -->
                 <form action="" method="get" onsubmit="alert('Your message has been sent!');">
 
-                    <label for="name">Name:</label><br>
-                    <input type="text" name="name" required><br><br>
+                    <label for="name">Name: </label><br>
+                    <input type="text" id="name" placeholder="Type your name..." required><br><br>
 
-                    <label for="email">Email:</label><br>
-                    <input type="email" name="email" required><br><br>
+                    <label for="email">Email: </label><br>
+                    <input type="email" id="email" placeholder="Type your email..." required><br><br>
 
-                    <label for="budget">Budget:</label><br>
+                    <label for="budget">Budget: </label><br>
                     <!-- Budget can't be negative and can't contain decimals -->
-                    <input type="number" name="budget" min="0" step="1" required><br><br>
+                    <input type="number" id="budget" min="0" step="1" placeholder="Your budget in ksh..." required><br><br>
 
-                    <label for="message">Project Idea:</label><br>
-                    <textarea name="message" rows="5" cols="40"></textarea><br><br>
+                    <label for="message">Project Idea: </label><br>
+                    <textarea id="message" placeholder="Describe your project..." rows="5" cols="40"></textarea><br><br>
 
                     <button type="submit">Submit</button>
 
