@@ -218,6 +218,10 @@ button:hover {
     text-align: center;
 }
 
+.process h1 {
+    text-align: center;
+}
+
 .about nav {
     display: flex;
     justify-content: center;
