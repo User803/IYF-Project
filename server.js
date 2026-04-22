@@ -64,60 +64,60 @@ for (let index = 0; index < arrayObj.length; index++) {
     age = arrayObj[index].age    
 }
 
-// console.log(names)
-// console.log(age)
+console.log(names)
+console.log(age)
 
 // Create an array of 10 students each with age. Find total number of age and mean age
 const studentsArray = [
     {
-        "name"  : "Jack",
-        "age"   : 20,
-        "gender": "male"
+        name  : "Jack",
+        age   : 20,
+        gender: "male"
     },
     {
-        "name"  : "Jane",
-        "age"   : 19,
-        "gender": "female"
+        name  : "Jane",
+        age   : 19,
+        gender: "female"
     },
     {
-        "name"  : "John",
-        "age"   : 22,
-        "gender": "make"
+        name  : "John",
+        age   : 22,
+        gender: "make"
     },
     {
-        "name": "Sarah",
-        "age": 23,
-        "gender": "female"
+        name: "Sarah",
+        age: 23,
+        gender: "female"
     },
     {
-        "name": "Alex",
-        "age": 31,
-        "gender": "male"
+        name: "Alex",
+        age: 31,
+        gender: "male"
     },
     {
-        "name": "Esther",
-        "age": 24,
-        "gender": "female"
+        name: "Esther",
+        age: 24,
+        gender: "female"
     },
     {
-        "name": "Lee",
-        "age": 27,
-        "gender": "male"
+        name: "Lee",
+        age: 27,
+        gender: "male"
     },
     {
-        "name": "Mary",
-        "age": 20,
-        "gender": "female"
+        name: "Mary",
+        age: 20,
+        gender: "female"
     },
     {
-        "name": "Ethan",
-        "age": 35,
-        "gender": "male"
+        name: "Ethan",
+        age: 35,
+        gender: "male"
     },
     {
-        "name": "Doe",
-        "age": 26,
-        "gender": "male"
+        name: "Doe",
+        age: 26,
+        gender: "male"
     }
 ]
 
@@ -138,3 +138,14 @@ function studentsMeanAge() {
     return totalStudentsAge() / studentsArray.length;     
 }
 console.log("Mean students age :", studentsMeanAge());
+
+// Names
+function studentsName() {
+
+    for (let index = 0; index < studentsArray.length; index++) {        
+        let studentName = studentsArray[index].name; 
+        console.log(index + 1, studentName);            
+    }    
+         
+}
+studentsName();
