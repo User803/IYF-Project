@@ -62,7 +62,8 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-between; /* text left, image right */
     align-items: center;            /* vertical centering */
-    height: 100vh;                  /* full view of each section takes entire page */
+    /*height: 100vh; */                  /* full view of each section takes entire page */
+    min-height: 100vh;              /* section is at least full screen*/
     padding: 0 50px;                /* horizontal spacing from edges */            
     box-sizing: border-box;
     gap: 50px;                      /* space between text div and image div */
@@ -140,6 +141,7 @@ button:hover {
   gap: 30px;
   margin-top: 40px;     /* To manually increase spacing from the process section */
   gap: 30px;
+  align-items: flex-start;
 }
 
 /* Individual Card */
@@ -151,6 +153,8 @@ button:hover {
   flex-direction: column;
   overflow: hidden;        
   height: 500px;
+  /* min-height: 500px; */
+  width: 31%;
 }
 
 /* Project Image */
@@ -158,8 +162,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   flex: 0 0 50%;          /* grow: 0 -> NOT grow if there’s extra space, shrink: 0 → NOT shrink if space is tight, basis: 50% → base size is 50% of the container. */
-  /*flex: 1; */           /* flex-grow: 1 -> It CAN grow, flex-shrink: 1 -> It CAN shrink. flex-basis: 0% -> Start at 0 width, then distribute space. */
-  height: 260px;
+  /* flex: 1; */          /* flex-grow: 1 -> It CAN grow, flex-shrink: 1 -> It CAN shrink. flex-basis: 0% -> Start at 0 width, then distribute space. */
+  /* height: 260px; */
+  height: auto;
   object-fit: cover;      /* prevents stretching */ 
   overflow: hidden;       /* images have same height, the rest is hidden */
 }
