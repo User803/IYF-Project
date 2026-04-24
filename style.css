@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(222, 240, 236);
+    background-color: rgb(212, 226, 223);
 }
 
 html {
@@ -62,7 +62,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-between; /* text left, image right */
     align-items: center;            /* vertical centering */
-    /*height: 100vh; */                  /* full view of each section takes entire page */
+    /*height: 100vh; */             /* full view of each section takes entire page */
     min-height: 100vh;              /* section is at least full screen*/
     padding: 0 50px;                /* horizontal spacing from edges */            
     box-sizing: border-box;
@@ -102,7 +102,6 @@ button:hover {
     border-radius: 12px;                       /* rounded corners */
     padding: 0.8rem;                           /* spacing inside card */
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -163,7 +162,6 @@ button:hover {
   flex-direction: column;
   flex: 0 0 50%;          /* grow: 0 -> NOT grow if there’s extra space, shrink: 0 → NOT shrink if space is tight, basis: 50% → base size is 50% of the container. */
   /* flex: 1; */          /* flex-grow: 1 -> It CAN grow, flex-shrink: 1 -> It CAN shrink. flex-basis: 0% -> Start at 0 width, then distribute space. */
-  /* height: 260px; */
   height: auto;
   object-fit: cover;      /* prevents stretching */ 
   overflow: hidden;       /* images have same height, the rest is hidden */
