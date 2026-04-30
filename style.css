@@ -211,7 +211,7 @@ button:hover {
 }
 
 .project-info a:hover {
-  background: #0056b3;
+  background: #000000;
 } 
 
 .contact img {
@@ -238,10 +238,6 @@ footer {
     flex-direction: column;
     align-items: center;     /* centers everything horizontally */
     justify-content: center; /* optional vertical centering */
-    background-color: #060606;
+    background-color: #2d2c2c;
     color: #fbfbfb;
-}
-           
-@media screen {
-    
 }
