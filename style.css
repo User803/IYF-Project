@@ -67,6 +67,7 @@ button:hover {
     padding: 0 50px;                /* horizontal spacing from edges */            
     box-sizing: border-box;
     gap: 50px;                      /* space between text div and image div */
+    overflow: auto;
 }
 
 .contact > div {
@@ -110,6 +111,7 @@ button:hover {
     aspect-ratio: 1 / 1;                        /* keep square shape */
     box-sizing: border-box;                     /* include padding in size */
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    flex-wrap: wrap;
 }
 
 /* Hover effect */
@@ -141,6 +143,7 @@ button:hover {
   margin-top: 40px;     /* To manually increase spacing from the process section */
   gap: 30px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 /* Individual Card */
@@ -214,10 +217,12 @@ button:hover {
   background: #000000;
 } 
 
-.contact img {
-    width: 40px;
+.social-icons img {
+    width: 40px;   
     height: 40px;
-    object-fit: contain;
+    gap: 10px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 
 .about h1 {
@@ -242,23 +247,175 @@ footer {
     color: #fbfbfb;
 }
 
-@media (max-width: 768px) {
-    .portfolio {
+/* Responsive design for mobile */
+ @media (max-width:950px) {
+    .home, .about, .process, .portfolio, .contact { 
+        flex-direction: column !important; 
+        align-items: stretch !important; 
+        width: 100% !important; 
+        min-height: auto !important; 
+        padding: 10px !important; 
+        gap: 12px !important; 
+        overflow: auto;
+    }
+
+    /* Show menu button */
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Header layout */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Hide nav by default */
+    header .nav {
+        position: absolute;
+        top: 60px;          /* below header */
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: none;      /* hidden initially */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    /* Show nav when active */
+    header .nav.active {
+        display: flex;
+    }
+
+    /* Make links full width */
+    header .nav a {
+        width: 100%;
+        text-align: center;
         padding: 10px;
+    }
+
+    /* shrink header logo on small screens */
+    .logo-container img {
+        width: 38px !important;
+        height: auto !important;
+        max-width: 100% !important;
+        display: block !important;
+    }
+
+    /* reduce nearby text to match */
+    .logo-container h2 {
+        font-size: 1.0rem !important;
+        margin: 0 !important;
+        line-height: 1 !important;
+    }
+
+    /* Ensure each half (text / image / cards) becomes full width */ 
+    .text-section, .image-section, .cards-section, .project-info, 
+    .portfolio-image { 
+        width: 100% !important; 
+        flex: 0 0 auto !important; 
+        min-width: 0 !important; /* allow children to shrink inside flex */ 
+    } 
+    
+    /* Convert grid of cards to single column */ 
+    .cards-section { 
+        display: block !important; 
+        gap: 12px !important; 
+    } 
+
+    .cards-section .card { 
+        width: 100% !important; 
+        flex: 0 0 auto !important; 
+        aspect-ratio: auto !important; /* allow variable height on mobile */ 
+        margin-bottom: 12px !important; 
+    } 
+    
+    /* Portfolio cards become stacked, responsive height */ 
+    .portfolio-card { 
+        width: 100% !important; 
+        height: auto !important; 
+        min-height: 0 !important; 
+        margin-bottom: 14px !important; 
+    } 
+
+    .portfolio-card, .portfolio-image, .portfolio-image { 
+        flex: 0 0 auto !important; 
+        width: 100% !important; 
+        height: auto !important; 
+        min-height: 0 !important; 
+        overflow: hidden !important; 
+        background-size: cover !important; 
+        background-position: center !important; 
+    }
+
+    .portfolio-image img, .portfolio-card img, .card img, img { 
+        display: block !important; 
+        width: 100% !important; 
+        max-width: 100% !important; 
+        height: auto !important; 
+        object-fit: cover !important; 
+    } 
+    
+    /* Prevent any element from causing horizontal scroll */ 
+    .home *, .about *, .process *, .portfolio *, .contact * { 
+        box-sizing: border-box !important; 
+        max-width: 100% !important; 
+        overflow-wrap: break-word !important; 
+    } 
+
+    .social-icons {
+        display: flex !important;
+        flex-direction: row !important;   /* 🔥 force horizontal */
+        align-items: center;
+        gap: 8px;
+        flex-wrap: nowrap;                /* keep them in one line */
+    }
+
+    /* Social Platform Icons */
+    .social-icons img {
+        width: 24px !important;
+        height: 24px !important;
     }
     
-    .card {
-        padding: 10px;
+    /* Reduce typography for mobile */ 
+    html { 
+        font-size: 16px !important; 
     }
 
-    .home,
-    .about,
-    .process,
-    .contact {
-        padding: 10px;
+    body { 
+        font-size: 0.95rem !important; 
+        line-height: 1.4 !important; 
+    } 
+
+    h1 { 
+        font-size: 1.6rem !important; 
+        margin: .25rem 0 !important; 
     }
 
-    button {
-        padding: 8px 16px;
+    h2 { 
+        font-size: 1.3rem !important; 
+        margin: .25rem 0 !important; 
+    }
+
+    h3 { 
+        font-size: 1.1rem !important; 
+        margin: .25rem 0 !important; 
+    }
+
+    p, li, a, button, span { 
+        font-size: 0.95rem !important; 
+    } 
+    
+    /* Tidy buttons and links */ 
+    button, .btn, .project-info a { 
+        padding: 8px 12px !important; 
+        font-size: 0.95rem !important; 
     }
 }
