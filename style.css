@@ -249,7 +249,11 @@ footer {
 
 /* Responsive design for mobile */
  @media (max-width:950px) {
-    .home, .about, .process, .portfolio, .contact { 
+    .home, 
+    .about, 
+    .process, 
+    .portfolio, 
+    .contact { 
         flex-direction: column !important; 
         align-items: stretch !important; 
         width: 100% !important; 
@@ -372,7 +376,7 @@ footer {
 
     .social-icons {
         display: flex !important;
-        flex-direction: row !important;   /* 🔥 force horizontal */
+        flex-direction: row !important;   /* force horizontal */
         align-items: center;
         gap: 8px;
         flex-wrap: nowrap;                /* keep them in one line */
