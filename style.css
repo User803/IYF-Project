@@ -386,6 +386,7 @@ footer {
         align-items: center;
         gap: 8px;
         flex-wrap: nowrap;                /* keep them in one line */
+        margin-top: 0;
     }
 
     /* Social Platform Icons */
