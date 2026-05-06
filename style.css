@@ -247,6 +247,11 @@ footer {
     color: #fbfbfb;
 }
 
+/* Hide the menu toggle on PC */
+.menu-toggle {
+  display: none;
+}
+
 /* Responsive design for mobile */
  @media (max-width:950px) {
     .home, 
@@ -257,13 +262,14 @@ footer {
         flex-direction: column !important; 
         align-items: stretch !important; 
         width: 100% !important; 
-        min-height: auto !important; 
+        /* min-height: auto !important;  */
+        min-height: 100% !important; 
         padding: 10px !important; 
         gap: 12px !important; 
         overflow: auto;
     }
 
-    /* Show menu button */
+    /* Show menu button on small devices */
     .menu-toggle {
         display: block;
         font-size: 1.5rem;
