@@ -253,7 +253,7 @@ footer {
 }
 
 /* Responsive design for mobile */
- @media (max-width:950px) {
+@media (max-width:950px) {
     .home, 
     .about, 
     .process, 
@@ -262,12 +262,18 @@ footer {
         flex-direction: column !important; 
         align-items: stretch !important; 
         width: 100% !important; 
-        /* min-height: auto !important;  */
-        min-height: 100% !important; 
+        min-height: auto !important; 
         padding: 10px !important; 
         gap: 12px !important; 
         overflow: auto;
     }
+    
+    /* Prevent any element from causing horizontal scroll */ 
+    .home *, .about *, .process *, .portfolio *, .contact * { 
+        box-sizing: border-box !important; 
+        max-width: 100% !important; 
+        overflow-wrap: break-word !important; 
+    } 
 
     /* Show menu button on small devices */
     .menu-toggle {
@@ -285,7 +291,7 @@ footer {
         align-items: center;
     }
 
-    /* Hide nav by default */
+    /* Hide nav by default because of the menu button */
     header .nav {
         position: absolute;
         top: 60px;          /* below header */
@@ -327,7 +333,10 @@ footer {
     }
 
     /* Ensure each half (text / image / cards) becomes full width */ 
-    .text-section, .image-section, .cards-section, .project-info, 
+    .text-section, 
+    .image-section, 
+    .cards-section, 
+    .project-info, 
     .portfolio-image { 
         width: 100% !important; 
         flex: 0 0 auto !important; 
@@ -355,7 +364,9 @@ footer {
         margin-bottom: 14px !important; 
     } 
 
-    .portfolio-card, .portfolio-image, .portfolio-image { 
+    .portfolio-card, 
+    .portfolio-image, 
+    .portfolio-image { 
         flex: 0 0 auto !important; 
         width: 100% !important; 
         height: auto !important; 
@@ -373,12 +384,6 @@ footer {
         object-fit: cover !important; 
     } 
     
-    /* Prevent any element from causing horizontal scroll */ 
-    .home *, .about *, .process *, .portfolio *, .contact * { 
-        box-sizing: border-box !important; 
-        max-width: 100% !important; 
-        overflow-wrap: break-word !important; 
-    } 
 
     .social-icons {
         display: flex !important;
