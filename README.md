@@ -3,25 +3,25 @@
 
 ## 📌 Overview
 
-This project is a **personal portfolio website** designed to showcase my skills, projects, and growth as a developer. It serves as a central place where I can present my work, highlight my technical abilities, and provide an easy way for others to learn more about me.
+This project is a simple **personal portfolio website** that showcases my skills and projects as a developer.
 
-The portfolio is built with a strong focus on **simplicity, responsiveness, and user experience**. It demonstrates my ability to create clean, structured, and visually appealing web interfaces using core web technologies.
+It includes sections that highlight the work I’ve done, along with a clear layout that makes it easy to navigate and understand what I’ve built. The goal was to create something that represents my current level while keeping the design clean and straightforward.
 
-Through this project, I aimed to:
+The website is built using latest technologies, focusing on structure, styling, and basic interactivity. 
+
+Overall, this project reflects my approach to building simple, functional web interfaces that are easy to use and visually clear.
 
 - Build a fully functional and responsive personal website from scratch  
-- Practice writing clean, maintainable front-end code  
-- Showcase my projects and technical skills in an organized manner  
-- Create a professional online presence  
+- Practice writing clean, maintainable front-end code 
 
 ## 🛠️ Tech Stack
 
 <p>
-  ## 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=E34F26)
-![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=1572B6)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
 </p>
 
 ---
