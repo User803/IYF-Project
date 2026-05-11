@@ -17,14 +17,12 @@ Through this project, I aimed to:
 ## 🛠️ Tech Stack
 
 <p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" alt="JavaScript"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" alt="HTML5"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50" alt="CSS3"/>
-</p>
+  ## 🛠️ Tech Stack
 
-- **JavaScript** – Adds interactivity and dynamic behavior  
-- **HTML5** – Provides the structure and semantic layout  
-- **CSS3** – Handles styling, layout, and responsiveness  
+![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=E34F26)
+![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=1572B6)
+</p>
 
 ---
 
@@ -32,15 +30,6 @@ Through this project, I aimed to:
 
 - Responsive design for mobile and desktop  
 - Clean and modern UI  
-- Project showcase section  
+- Personal projects showcase section  
 - About me section  
 - Contact section  
-
----
-
-## ⚙️ How to Run
-
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-open index.html
